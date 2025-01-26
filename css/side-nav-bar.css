@@ -1,0 +1,99 @@
+.side-nav-bar {
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    left: -100%;
+    width: 400px;
+    top: 0;
+    bottom: 0;
+    background-color: rgb(255, 255, 255);
+    font-size: 18px;
+    z-index: 5000;
+    transition: left 0.3s ease;
+}
+.side-nav-bar .nav-header {
+    display: inline-flex;
+    height: 64px;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 24px;
+    background-color: rgb(0, 0, 0);
+}
+
+.nav-header .brand-name-tag {
+    margin-left: 10px;
+    font-size: clamp(24px, 3.4vw, 28px);
+    font-weight: 300;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    cursor: pointer;
+}
+
+.nav-header .brand-name-tag p {
+    text-decoration: none;
+    color: white;
+    
+}
+
+.nav-header .brand-name-tag span {
+    font-size: 7px;
+    position: absolute;
+    top: 2px;
+    right: -7px;
+}
+.nav-header .right-to-nav-brand {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+.nav-header .close-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 1px;
+    padding: 5px;
+    cursor: pointer;
+}
+.nav-header .close-btn:hover {
+    background-color: rgba(109, 109, 109, 0.414);
+}
+.nav-header .close-btn svg {
+    fill: rgba(255, 255, 255, 0.406);
+}
+
+
+.side-nav-bar .bar-1 {
+    display: inline-flex;
+    
+}
+.side-nav-bar .bar-2 {
+    display: inline-flex;
+
+}
+.side-nav-bar .bar-3 {
+    display: inline-flex;
+
+}
+.side-nav-bar .bar-4 {
+    display: inline-flex;
+
+}
+.side-nav-bar .bar-5 {
+    display: inline-flex;
+
+}
+
+
+
+@media(max-width: 559px) {
+
+    .side-nav-bar {
+        left: -100%;
+        width: 100%;
+        top: 0;
+        bottom: 0;
+    }
+}
